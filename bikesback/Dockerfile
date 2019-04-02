@@ -15,6 +15,4 @@ RUN apt-get update && apt-get install -y \
 
 EXPOSE 3001
 
-ENV FRONT_URL=http://localhost:3000
-
 CMD npm start
