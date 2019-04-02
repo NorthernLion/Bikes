@@ -12,6 +12,9 @@ Giving extra points for moving bikes from full bike stations to empty ones.
 To increase usage of the Alepa bikes
 To reduce usage of motor vehicles in moving of the bikes from full bike stations to empty ones
 
+## Where
+https://futurebikes.herokuapp.com/
+
 ## How
 
 Using digitransit API for routes and bike stops
