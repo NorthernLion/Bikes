@@ -1,5 +1,7 @@
 ## Bikes
 
+https://codebeat.co/a/northernlion/projects/github-com-northernlion-bikes-master
+
 
 ## What
 
