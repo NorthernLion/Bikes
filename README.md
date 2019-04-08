@@ -1,5 +1,7 @@
 ## Bikes
 
+https://codebeat.co/a/northernlion/projects/github-com-northernlion-bikes-master
+
 
 ## What
 
@@ -11,6 +13,9 @@ Giving extra points for moving bikes from full bike stations to empty ones.
 
 To increase usage of the Alepa bikes
 To reduce usage of motor vehicles in moving of the bikes from full bike stations to empty ones
+
+## Where
+https://futurebikes.herokuapp.com/
 
 ## How
 
