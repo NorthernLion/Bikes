@@ -2,11 +2,13 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { handleRequest } from './ApiConnection'
-// import corporationReducer from '../containers/corporation/services/corporationReducer'
 
+import login from '../reducers/LoginReducer'
+import loading from '../reducers/LoadingReducer'
 
 const reducer = combineReducers({
-  //corporations: corporationReducer
+  user: login,
+  loading: loading
 })
 
 const store = createStore(
