@@ -5,10 +5,12 @@ import { handleRequest } from './ApiConnection'
 
 import login from '../reducers/LoginReducer'
 import loading from '../reducers/LoadingReducer'
+import stations from '../reducers/BikeStationReducer'
 
 const reducer = combineReducers({
   user: login,
-  loading: loading
+  loading: loading,
+  stations: stations
 })
 
 const store = createStore(

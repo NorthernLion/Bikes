@@ -4,7 +4,7 @@ import { createHttpLink } from 'apollo-link-http'
 import { setContext } from 'apollo-link-context'
 
 const httpLink = createHttpLink({
-  uri: 'https://www.hsl.fi/en/citybikes',
+  uri: 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql',
 })
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('library-user-token')
