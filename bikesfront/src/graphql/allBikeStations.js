@@ -2,9 +2,14 @@ import gql from 'graphql-tag'
 
 const ALL_BIKE_STATIONS = gql`
 query {
-  bikeParks {
-    bikeParkId
+  bikeRentalStations {
     name
+    stationId
+    bikesAvailable
+    spacesAvailable
+    state
+    lon
+    lat
   }
 }
 `

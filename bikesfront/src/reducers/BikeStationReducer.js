@@ -3,7 +3,7 @@ const INITIAL_STATE = []
 const bikeStationReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'BIKESTATIONS_GET_ALL_SUCCESS':
-      return action.stations
+      return action.stations.data.bikeRentalStations
     case 'BIKESTATIONS_GET_ALL_FAILURE':
       return []
     default:
@@ -14,10 +14,17 @@ const bikeStationReducer = (state = INITIAL_STATE, action) => {
 export const getAllBikeStations = stations => {
   return async dispatch => {
     
-    dispatch({
-      type: 'BIKESTATIONS_GET_ALL_SUCCESS',
-      stations
-    })
+    if (!stations.loading) {
+      dispatch({
+        type: 'BIKESTATIONS_GET_ALL_SUCCESS',
+        stations
+      })
+    } else {
+      dispatch({
+        type: 'BIKESTATIONS_GET_ALL_ATTEMPT'
+      })
+    }
+
   }
 }
 
