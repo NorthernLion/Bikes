@@ -8,7 +8,6 @@ export class RegisterPage extends React.Component {
     e.preventDefault()
 
     if (e.target.password.value !== e.target.passwordA.value) {
-      console.log('you goold')
     } else {
       const content = {
         username: e.target.username.value,
